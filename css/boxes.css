@@ -1,0 +1,29 @@
+body{
+    background-color: #444;
+}
+
+.bouncing-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(231, 76, 60);
+}
+
+.bouncing-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(231, 76, 60);
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+section.bounding-box {
+    background-color: #2980B9;
+    display: block;
+    width: 90%;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    border: 1px #ECF0F1 solid;
+}
