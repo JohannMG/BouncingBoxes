@@ -60,6 +60,10 @@ function borderCollision(_callback) {
 		if ( element.posY <= (0 + COLLISION_BUFFER) ||
 			 ((element.posY + element.size + COLLISION_BUFFER ) >= fieldH )
 			){
+				 if (element.posY + element.size > fieldH ) {
+					 element.posY = fieldH - element.size - COLLISION_BUFFER; 
+				 }
+				 
 				 element.velocityY *= -1; 
 				 element.DOMelement.setAttribute('data-velocity-Y', element.velocityY); 
 			}
@@ -68,6 +72,10 @@ function borderCollision(_callback) {
 		if ( element.posX <= (0 + COLLISION_BUFFER) ||
 			 (element.posX + element.size + COLLISION_BUFFER) >= fieldW 
 		){
+			if (element.posX + element.size + COLLISION_BUFFER > fieldW ){
+				element.posX = fieldW - element.size - COLLISION_BUFFER; 
+			}
+			
 			element.velocityX *= -1; 
 			element.DOMelement.setAttribute('data-velocity-x', element.velocityX); 
 		}
