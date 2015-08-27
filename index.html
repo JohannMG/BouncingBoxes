@@ -16,18 +16,32 @@
 
         <!-- Custom Formatting -->
         <link rel="stylesheet" href="css/boxes.css">
+        
+        <!--Watson AI not permitted in project scope <link rel="AI" href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/">-->
+        
 
     </head>
     <body>
 
         <div class="main-container">
-            <section class="bounding-box">
-                
-                <div class="bouncing-box" id="0" style=""></div>
+            <section class="bounding-box" id="field">
+
+                    <!--<div class="bouncing-box" id="0" style=""></div>-->
+
 
             </section>
 
         </div> <!-- #main-container -->
+        
+        <p>
+            <button id="add-box">Add Box</button>
+            <button id="start">Re-Start</button>
+            <button id="stop">KILL ALL</button>
+            <button id="stop-clock">Toggle Clock</button>
+            <!--<button id="testtop">TopTest</button>-->
+            Framecount: <span id="framecount">000</span>
+        </p>
+            
 
         <script src="js/main.js"></script>
     </body>

@@ -6,13 +6,15 @@ body{
     width: 50px;
     height: 50px;
     background-color: rgb(231, 76, 60);
+    display: -webkit-inline-box;
 }
 
 .bouncing-box {
     width: 50px;
     height: 50px;
     background-color: rgb(231, 76, 60);
-    position: relative;
+    border: 1px #ECF0F1 solid;
+    position: fixed;
     top: 20%;
     left: 20%;
 }
@@ -20,10 +22,8 @@ body{
 section.bounding-box {
     background-color: #2980B9;
     display: block;
-    width: 90%;
-    height: 90vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
+    width: 99%;
+    height: 80vh;
+    margin: 0; 
     border: 1px #ECF0F1 solid;
 }
